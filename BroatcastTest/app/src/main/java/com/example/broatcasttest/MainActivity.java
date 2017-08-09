@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
-                sendBroadcast(intent);
+//                sendBroadcast(intent);     // 发送标注广播
+                sendOrderedBroadcast(intent, null);     // 发送有序广播，第二个参数和权限相关
             }
         });
     }
