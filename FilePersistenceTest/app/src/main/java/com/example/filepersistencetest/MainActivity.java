@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         String inputText = load();
         if (!TextUtils.isEmpty(inputText)) {
             edit.setText(inputText);
-            edit.setSelection(inputText.length());
+            edit.setSelection(inputText.length());    // 设置光标到最后一个位置
             Toast.makeText(this, "Restoring successed", Toast.LENGTH_SHORT).show();
         }
     }
